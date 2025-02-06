@@ -73,6 +73,10 @@ Complex Complex::multiplication(Complex a)
 Complex Complex::division(Complex a)
 {
     Complex Result = Complex();
-    std::cout << "this is not assing !" << std::endl;
+    Rationnel denominator = a.getReal().multiplication(a.getReal()).addition(a.getImaginary().multiplication(a.getImaginary()));
+    Rationnel realPart = real.multiplication(a.getReal()).addition(imaginary.multiplication(a.getImaginary())).division(denominator);
+    Rationnel imaginaryPart = imaginary.multiplication(a.getReal()).soustraction(real.multiplication(a.getImaginary())).division(denominator);
+    Result.setReal(realPart);
+    Result.setImaginary(imaginaryPart);
     return Result;
 }
