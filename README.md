@@ -13,7 +13,7 @@ This repository contains an exercise in applying mathematical operations and obj
   - `addition(<type>)`  
   - `subtraction(<type>)`  
   - `multiplication(<type>)`  
-  - `division(<type>)` *(only available for Rational class)*  
+  - `division(<type>)` 
   - `info(<type>)` *(prints the Rational or Complex object clearly)*  
 
 - **Usage of Setters and Getters**  
