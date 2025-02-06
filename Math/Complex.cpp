@@ -25,10 +25,25 @@ Rationnel Complex::getImaginary()
 }
 void Complex::Info()
 {
-    std::cout << " [ " << "(" << real.getNumerateur() << "/"
+    //if the complex is defined
+    if(real.getNumerateur() != 0 && imaginary.getNumerateur() != 0)
+    {
+        std::cout << " [ " << "(" << real.getNumerateur() << "/"
             << real.getDenominateur() << ")" << " + " 
             << "(" << imaginary.getNumerateur() << "/"
             << imaginary.getDenominateur() << ")" << "i" << " ] " ;
+    }
+    //if the complex not have a imaginary party
+    if(imaginary.getNumerateur() == 0)
+    {
+        real.Info();
+    }
+    //if the complex not have a real party
+    if(real.getNumerateur() == 0)
+    {
+        imaginary.Info();
+        std::cout << "i";
+    }
 }
 Complex Complex::addition(Complex a)
 {
