@@ -26,7 +26,7 @@ void testRationel()
     j.setImaginary(un_demi);
     result = i.multiplication(j);
     i.Info();
-    std::cout << " + ";
+    std::cout << " * ";
     j.Info();
     std::cout << " = ";
     result.Info();
