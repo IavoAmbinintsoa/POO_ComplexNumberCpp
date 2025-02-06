@@ -58,7 +58,8 @@ Complex multiplication(Complex a,Rationnel b)
 {
     Complex result = Complex();
     result.setReal(b.multiplication(a.getReal()));
-    return result.multiplication(a);
+    result.setImaginary(b.multiplication(a.getImaginary()));
+    return result;
 }
 Complex multiplication(Complex a,int i)
 {
