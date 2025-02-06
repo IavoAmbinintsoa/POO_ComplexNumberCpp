@@ -1,5 +1,9 @@
 #include "arithmetic.h"
 
+/*
+    This file is used to apply our classes and methods in practice.
+*/
+
 void testRationel();
 int main()
 {
@@ -20,10 +24,10 @@ void testRationel()
     
     i.setReal(un_demi);
     i.setImaginary(trois_quarts);
-    
-    
     j.setReal(trois_quarts);
     j.setImaginary(un_demi);
+    
+    //Multiplication with two Complex number
     result = i.multiplication(j);
     i.Info();
     std::cout << " * ";
@@ -31,7 +35,8 @@ void testRationel()
     std::cout << " = ";
     result.Info();
     std::cout << std::endl;
-   
+
+    //Addition with Number and integer
    o = addition(i,d);
    i.Info();
    std::cout << " + " << d;
