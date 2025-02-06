@@ -23,4 +23,5 @@ This repository contains an exercise in applying mathematical operations and obj
   - Complex and Integer  
   - Rational and Integer  
 
-    
+
+- **Namespace usage { isa }** (defined in `Complex.h & Rationnel.h`):  
